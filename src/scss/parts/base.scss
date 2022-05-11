@@ -1,0 +1,24 @@
+body {
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.ibg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
