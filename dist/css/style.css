@@ -36,7 +36,6 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -92,10 +91,81 @@ h6 {
   font-weight: inherit;
 }
 
-body {
-  font-size: 16px;
-  font-weight: 500;
+@font-face {
+  font-family: Free Sans Bold;
+  font-display: swap;
+  src: url("../fonts/Free Sans Bold.woff2") format("woff2"), url("../fonts/Free Sans Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Free Sans Regular;
+  font-display: swap;
+  src: url("../fonts/Free Sans Regular.woff2") format("woff2"), url("../fonts/Free Sans Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-BoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-MediumItalic.woff2") format("woff2"), url("../fonts/Gilroy-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-RegularItalic.woff2") format("woff2"), url("../fonts/Gilroy-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+body {
+  font-family: Gilroy;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
 }
 
 .container {
@@ -125,4 +195,291 @@ body {
   top: 0;
   opacity: 0;
   visibility: hidden;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 120%;
+  color: #000000;
+}
+h2 span {
+  color: #1aa581;
+}
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 2.0625rem;
+    line-height: 115%;
+  }
+}
+@media screen and (max-width: 769px) {
+  h2 {
+    font-size: 1.625rem;
+    line-height: 110%;
+  }
+}
+@media screen and (max-width: 481px) {
+  h2 {
+    font-size: 1.25rem;
+    line-height: 100%;
+  }
+}
+
+.main__amazon {
+  margin: 5.0625rem auto 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .main__amazon {
+    margin: 3.8125rem auto 0 auto;
+  }
+}
+@media screen and (max-width: 769px) {
+  .main__amazon {
+    margin: 0 auto 0 auto;
+  }
+}
+
+.main-block {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.main-block__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5rem;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 1024px) {
+  .main-block__body {
+    padding-top: 4.1875rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .main-block__body {
+    display: block;
+    padding-top: 2.5rem;
+  }
+}
+@media screen and (max-width: 481px) {
+  .main-block__body {
+    padding-top: 1.875rem;
+  }
+}
+.main-block__info {
+  flex: 0 1 50%;
+  padding-right: 1.25rem;
+}
+@media screen and (max-width: 1024px) {
+  .main-block__info {
+    padding-right: 0.625rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .main-block__info {
+    flex: 1 1 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+.main-block__title {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 123%;
+  letter-spacing: -0.02em;
+  color: #000000;
+  max-width: 36.4375rem;
+}
+.main-block__title span {
+  text-transform: uppercase;
+  color: #1aa581;
+}
+@media screen and (max-width: 1024px) {
+  .main-block__title {
+    font-size: 2.6875rem;
+    line-height: 103%;
+    max-width: 23.9375rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .main-block__title {
+    font-size: 2.0625rem;
+    line-height: 103%;
+    max-width: 17.6875rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 481px) {
+  .main-block__title {
+    font-size: 1.75rem;
+    max-width: 15.8125rem;
+  }
+}
+.main-block__text {
+  margin-top: 1.375rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #7e7c89;
+}
+@media screen and (max-width: 1024px) {
+  .main-block__text {
+    margin-top: 1.125rem;
+    font-size: 1.125rem;
+    line-height: 130%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .main-block__text {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 120%;
+  }
+}
+.main-block__button {
+  display: inline-block;
+  margin-top: 2.25rem;
+  font-size: 1rem;
+  line-height: 162%;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #1aa581;
+  padding: 1.0625rem 2.5rem;
+  text-align: center;
+  box-shadow: 0px 67px 80px rgba(26, 165, 129, 0.07), 0px 43px 46px rgba(26, 165, 129, 0.05), 0px 25px 25px rgba(26, 165, 129, 0.04), 0px 13px 13px rgba(26, 165, 129, 0.03), 0px 5px 6px rgba(26, 165, 129, 0.03), 0px 1px 3px rgba(26, 165, 129, 0.02);
+  border-radius: 1000px;
+}
+@media screen and (max-width: 1024px) {
+  .main-block__button {
+    margin-top: 1.75rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .main-block__button {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 481px) {
+  .main-block__button {
+    max-width: none;
+    width: 100%;
+  }
+}
+.main-block__image {
+  flex: 0 1 50%;
+}
+.main-block__image img {
+  max-width: 705px;
+  width: 100%;
+}
+@media screen and (max-width: 769px) {
+  .main-block__image {
+    max-width: 450px;
+    margin: 2.5rem auto 0 auto;
+    text-align: center;
+  }
+  .main-block__image img {
+    width: 90%;
+  }
+}
+.main-block__background {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translate(-100%, 0%);
+  z-index: 0;
+  width: 50%;
+}
+.amazon {
+  max-width: 1880px;
+  padding: 0 20px;
+}
+@media screen and (max-width: 769px) {
+  .amazon {
+    margin-top: -6.875rem;
+  }
+}
+.amazon__inner {
+  background-color: #f7f7fa;
+  border-radius: 20px;
+}
+.amazon__body {
+  background: url("../../img/amazon-block/flags.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3.75rem 0px;
+}
+@media screen and (max-width: 1440px) {
+  .amazon__body {
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .amazon__body {
+    padding: 3.125rem 0px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .amazon__body {
+    padding: 8.75rem 0 2.5rem 0px;
+    background: none;
+  }
+}
+@media screen and (max-width: 481px) {
+  .amazon__body {
+    padding: 8.75rem 0 2.5rem 0px;
+  }
+}
+.amazon__title {
+  max-width: 36.5625rem;
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .amazon__title {
+    max-width: 30.3125rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .amazon__title {
+    max-width: 24.0625rem;
+  }
+}
+@media screen and (max-width: 481px) {
+  .amazon__title {
+    max-width: 17.8125rem;
+  }
+}
+.amazon__text {
+  max-width: 44.0625rem;
+  margin: 1.375rem auto 0 auto;
+  text-align: center;
+  font-weight: 400;
+  line-height: 175%;
+}
+@media screen and (max-width: 1024px) {
+  .amazon__text {
+    margin: 1.125rem auto 0 auto;
+    line-height: 165%;
+    max-width: 31.5625rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .amazon__text {
+    margin: 1.0625rem auto 0 auto;
+    line-height: 155%;
+    max-width: 25.3125rem;
+  }
+}
+@media screen and (max-width: 481px) {
+  .amazon__text {
+    margin: 1rem auto 0 auto;
+    line-height: 145%;
+    max-width: 14.6875rem;
+  }
 }
