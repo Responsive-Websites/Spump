@@ -1,6 +1,14 @@
 body {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Gilroy;
 }
-
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
+}
 .wrapper {
   overflow: hidden;
   min-height: 100%;
