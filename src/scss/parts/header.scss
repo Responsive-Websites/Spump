@@ -1,0 +1,35 @@
+.header {
+  &__body {
+    max-width: 1840px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    position: relative;
+    left: 0;
+    top: 8px;
+    z-index: 100;
+
+    & img {
+      cursor: pointer;
+      position: fixed;
+      width: 15.37%;
+      background-color: rgb(255, 255, 255);
+      padding: 10px 10% 10px 15px;
+
+      border-radius: 0px 10px 10px 0px;
+
+      @media screen and (max-width: 1024px) {
+        width: 19.37%;
+      }
+      @media screen and (max-width: 769px) {
+        width: 17.37%;
+        padding: 10px 4% 10px 15px;
+      }
+      @media screen and (max-width: 481px) {
+        width: 17.37%;
+        padding: 10px 3% 10px 5px;
+      }
+    }
+  }
+}
