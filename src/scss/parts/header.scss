@@ -13,22 +13,23 @@
     & img {
       cursor: pointer;
       position: fixed;
-      width: 15.37%;
+      width: rem(118);
       background-color: rgb(255, 255, 255);
-      padding: 10px 10% 10px 15px;
+      padding: 10px 10px 10px 20px;
 
       border-radius: 0px 10px 10px 0px;
 
       @media screen and (max-width: 1024px) {
-        width: 19.37%;
+        width: rem(118);
+        padding: 10px 40px 10px 20px;
       }
       @media screen and (max-width: 769px) {
-        width: 17.37%;
-        padding: 10px 4% 10px 15px;
+        width: rem(108);
+        padding: 10px 30px 10px 20px;
       }
       @media screen and (max-width: 481px) {
-        width: 17.37%;
-        padding: 10px 3% 10px 5px;
+        width: rem(50);
+        padding: 10px 10px 10px 10px;
       }
     }
   }

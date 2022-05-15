@@ -34,6 +34,9 @@
       margin: rem(40) auto 0 auto;
     }
   }
+  &__structure {
+    margin: rem(38) auto 0 auto;
+  }
 }
 .main-block {
   position: relative;
@@ -563,5 +566,134 @@
     & img {
       width: 100%;
     }
+  }
+}
+
+.structure {
+  max-width: 1880px;
+  padding: 0 20px;
+  &__inner {
+    background-color: $color-green;
+    border-radius: 20px;
+    padding: rem(80) 0;
+  }
+
+  &__container {
+  }
+
+  &__body {
+  }
+
+  &__title {
+    color: $color-white;
+    max-width: rem(525);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__plan {
+    margin-top: rem(50);
+  }
+
+  &__results {
+  }
+}
+.plan {
+  &__items {
+    display: flex;
+    justify-content: center;
+  }
+  &__layer-one {
+  }
+
+  &__item {
+    max-width: rem(264);
+    width: 100%;
+    background-color: $color-white;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
+      0px 64px 46px rgba(0, 0, 0, 0.03), 0px 38px 25px rgba(0, 0, 0, 0.02),
+      0px 20px 13px rgba(0, 0, 0, 0.02), 0px 8px 6px rgba(0, 0, 0, 0.02),
+      0px 2px 3px rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
+    padding: rem(20);
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    padding-right: rem(10);
+  }
+
+  &__label {
+    text-align: center;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: rem(16);
+    line-height: 138%;
+
+    letter-spacing: -0.02em;
+  }
+
+  &__arrow {
+    text-align: center;
+  }
+
+  &__layer-two {
+    & .plan__items {
+      column-gap: rem(326);
+    }
+  }
+
+  &__layer-three {
+    & .plan__items {
+      column-gap: rem(30);
+    }
+  }
+}
+.results {
+  margin-top: rem(45);
+  &__title {
+    text-align: center;
+  }
+  &__items {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    column-gap: rem(30);
+    row-gap: rem(16);
+    margin-top: rem(25);
+  }
+  &__item {
+    flex: 0 1 rem(460);
+    background-color: $color-white;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: rem(17) rem(30);
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  &__icon {
+    padding-right: rem(10);
+  }
+
+  &__label {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: rem(16);
+    line-height: 138%;
+    text-align: center;
   }
 }
