@@ -43,11 +43,29 @@ body {
   opacity: 0;
   visibility: hidden;
 }
+.button {
+  font-size: rem(16);
+  line-height: 162%;
+  color: $color-white;
+  font-weight: 700;
+  background-color: $color-green;
+  padding: rem(17) rem(40);
+  text-align: center;
+
+  box-shadow: 0px 67px 80px rgba(26, 165, 129, 0.07),
+    0px 43px 46px rgba(26, 165, 129, 0.05),
+    0px 25px 25px rgba(26, 165, 129, 0.04),
+    0px 13px 13px rgba(26, 165, 129, 0.03), 0px 5px 6px rgba(26, 165, 129, 0.03),
+    0px 1px 3px rgba(26, 165, 129, 0.02);
+  border-radius: 1000px;
+  display: inline-block;
+}
 
 h2 {
   font-weight: 700;
   font-size: rem(40);
   line-height: 120%;
+  letter-spacing: -0.01em;
   color: $color-black;
   & span {
     color: $color-green;
