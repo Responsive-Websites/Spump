@@ -36,6 +36,10 @@
   }
   &__structure {
     margin: rem(38) auto 0 auto;
+
+    @media screen and (max-width: 1092px) {
+      margin-top: rem(20);
+    }
   }
 }
 .main-block {
@@ -576,6 +580,18 @@
     background-color: $color-green;
     border-radius: 20px;
     padding: rem(80) 0;
+    background-image: url('../../img/structure-block/patterns-background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 1272px) {
+      padding: rem(60) 0;
+    }
+    @media screen and (max-width: 1092px) {
+      padding: rem(50) 0;
+    }
+    @media screen and (max-width: 460px) {
+      padding: rem(30) 0;
+    }
   }
 
   &__container {
@@ -589,10 +605,29 @@
     max-width: rem(525);
     margin: 0 auto;
     text-align: center;
+    @media screen and (max-width: 1272px) {
+      max-width: rem(525);
+      padding: 0 rem(10);
+    }
+    @media screen and (max-width: 1092px) {
+      max-width: rem(425);
+    }
+    @media screen and (max-width: 460px) {
+      max-width: rem(225);
+    }
   }
 
   &__plan {
     margin-top: rem(50);
+    @media screen and (max-width: 1272px) {
+      margin-top: rem(40);
+    }
+    @media screen and (max-width: 1092px) {
+      margin-top: rem(35);
+    }
+    @media screen and (max-width: 460px) {
+      margin-top: rem(30);
+    }
   }
 
   &__results {
@@ -619,6 +654,10 @@
 
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 1272px) {
+      max-width: rem(204);
+    }
   }
 
   &__icon {
@@ -639,6 +678,11 @@
     line-height: 138%;
 
     letter-spacing: -0.02em;
+
+    @media screen and (max-width: 1272px) {
+      font-size: rem(14);
+      line-height: 108%;
+    }
   }
 
   &__arrow {
@@ -648,6 +692,24 @@
   &__layer-two {
     & .plan__items {
       column-gap: rem(326);
+      @media screen and (max-width: 1092px) {
+        column-gap: rem(130);
+      }
+    }
+    @media screen and (max-width: 544px) {
+      & .plan__items {
+        column-gap: rem(0);
+        flex-wrap: wrap;
+        row-gap: rem(10);
+      }
+
+      & .plan__item {
+        max-width: none;
+        flex: 1 1 rem(300);
+      }
+      & .plan__label {
+        justify-content: flex-start;
+      }
     }
   }
 
@@ -655,10 +717,99 @@
     & .plan__items {
       column-gap: rem(30);
     }
+    @media screen and (max-width: 1092px) {
+      & .plan__items {
+        column-gap: rem(10);
+        row-gap: rem(10);
+        flex-wrap: wrap;
+      }
+      & .plan__item {
+        flex-grow: 1;
+        max-width: none;
+        flex: 1 1 rem(250);
+      }
+      & .plan__label {
+        justify-content: flex-start;
+      }
+    }
+    @media screen and (max-width: 544px) {
+      margin-top: rem(20);
+    }
+  }
+}
+.arrow-one {
+  @media screen and (max-width: 1272px) {
+    & img {
+      width: rem(550);
+    }
+  }
+  @media screen and (max-width: 1092px) {
+    & img {
+      width: rem(340);
+    }
+  }
+  @media screen and (max-width: 460px) {
+    & img {
+      width: rem(240);
+    }
+  }
+  @media screen and (max-width: 360px) {
+    & img {
+      width: rem(200);
+    }
+  }
+}
+.arrow-two {
+  @media screen and (max-width: 1272px) {
+    & img {
+      width: rem(940);
+    }
+  }
+  @media screen and (max-width: 1092px) {
+    & img {
+      width: rem(740);
+    }
+  }
+  @media screen and (max-width: 834px) {
+    & img {
+      width: rem(440);
+    }
+  }
+  @media screen and (max-width: 544px) {
+    display: none;
+  }
+}
+.arrow-three {
+  @media screen and (max-width: 1272px) {
+    & img {
+      width: rem(920);
+    }
+  }
+  @media screen and (max-width: 1092px) {
+    & img {
+      width: rem(640);
+    }
+  }
+  @media screen and (max-width: 734px) {
+    & img {
+      width: rem(440);
+    }
+  }
+  @media screen and (max-width: 544px) {
+    display: none;
   }
 }
 .results {
   margin-top: rem(45);
+  @media screen and (max-width: 1272px) {
+    margin-top: rem(40);
+  }
+  @media screen and (max-width: 1092px) {
+    margin-top: rem(35);
+  }
+  @media screen and (max-width: 460px) {
+    margin-top: rem(30);
+  }
   &__title {
     text-align: center;
   }
@@ -669,6 +820,10 @@
     column-gap: rem(30);
     row-gap: rem(16);
     margin-top: rem(25);
+    @media screen and (max-width: 481px) {
+      column-gap: rem(0);
+      row-gap: rem(10);
+    }
   }
   &__item {
     flex: 0 1 rem(460);
@@ -678,6 +833,9 @@
     padding: rem(17) rem(30);
     align-items: center;
     border-radius: 10px;
+    @media screen and (max-width: 1510px) {
+      flex-grow: 1;
+    }
   }
 
   &__icon {
