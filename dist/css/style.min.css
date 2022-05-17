@@ -391,6 +391,24 @@ h4 {
     margin-top: 2.5rem;
   }
 }
+.main__consultation {
+  margin: 10rem auto 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .main__consultation {
+    margin-top: 7.5rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .main__consultation {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 481px) {
+  .main__consultation {
+    margin-top: 2.5rem;
+  }
+}
 
 .main-block {
   position: relative;
@@ -1710,4 +1728,298 @@ h4 {
   font-weight: 400;
   font-size: 1rem;
   line-height: 175%;
+}
+
+.consultation {
+  max-width: 1880px;
+  padding: 0 20px;
+}
+.consultation__inner {
+  background-color: #1aa581;
+  border-radius: 20px;
+  padding: 3.75rem 0;
+  background-image: url("../../img/consultation-block/patterns-background.svg");
+}
+@media screen and (max-width: 1332px) {
+  .consultation__inner {
+    padding: 1.875rem 0;
+  }
+}
+.consultation__body {
+  display: flex;
+  align-items: center;
+  column-gap: 4.75rem;
+}
+@media screen and (max-width: 1388px) {
+  .consultation__body {
+    column-gap: 2.25rem;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .consultation__body {
+    flex-flow: row wrap;
+  }
+}
+.consultation__content {
+  flex: 0 0 36.4375rem;
+}
+@media screen and (max-width: 1388px) {
+  .consultation__content {
+    flex: 0 1 36.4375rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .consultation__content {
+    flex: 1 1 100%;
+    order: 2;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+.consultation__get {
+  background: #ffffff;
+  flex: 0 0 53.5625rem;
+}
+@media screen and (max-width: 1658px) {
+  .consultation__get {
+    flex: 0 1 53.5625rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .consultation__get {
+    flex: 1 1 100%;
+    order: 1;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.content-consultation__quote {
+  max-width: 2.875rem;
+}
+.content-consultation__text {
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 155%;
+  color: #ffffff;
+  margin-top: 1.5625rem;
+  max-width: 36.4375rem;
+}
+@media screen and (max-width: 1206px) {
+  .content-consultation__text {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 524px) {
+  .content-consultation__text {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1.0625rem;
+  }
+}
+.content-consultation__about-person {
+  margin-top: 2.625rem;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 524px) {
+  .content-consultation__about-person {
+    margin-top: 1.25rem;
+  }
+}
+.content-consultation__person-icon {
+  max-width: 3.75rem;
+  max-height: 3.75rem;
+  border-radius: 50%;
+  margin-right: 1.25rem;
+}
+@media screen and (max-width: 524px) {
+  .content-consultation__person-icon {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    margin-right: 0.625rem;
+  }
+}
+.content-consultation__person-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+  margin-right: 1.875rem;
+}
+@media screen and (max-width: 524px) {
+  .content-consultation__person-info {
+    margin-right: 0.625rem;
+  }
+}
+.content-consultation__person-name {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 138%;
+  color: #ffffff;
+}
+.content-consultation__person-work {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 129%;
+  color: #ffffff;
+}
+.content-consultation__signature {
+  max-width: 8.125rem;
+}
+.content-consultation__signature img {
+  width: 100%;
+}
+@media screen and (max-width: 524px) {
+  .content-consultation__signature {
+    max-width: 6.25rem;
+  }
+}
+
+.get-consultation {
+  padding: 3.375rem 4.75rem 4.75rem 4.75rem;
+  border-radius: 20px;
+}
+@media screen and (max-width: 1164px) {
+  .get-consultation {
+    padding: 1.5rem 2.875rem 2.875rem 2.875rem;
+  }
+}
+@media screen and (max-width: 524px) {
+  .get-consultation {
+    padding: 0.875rem 1.625rem 1.625rem 1.625rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .get-consultation {
+    padding: 1.5625rem 0.9375rem 1.5625rem 0.9375rem;
+  }
+}
+.get-consultation__consultation-info {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 430px) {
+  .get-consultation__consultation-info {
+    flex-flow: row wrap;
+    row-gap: 0.625rem;
+  }
+}
+.get-consultation__title {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 136%;
+  padding-right: 0.625rem;
+}
+@media screen and (max-width: 524px) {
+  .get-consultation__title {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .get-consultation__title {
+    flex: 1 1 12.5rem;
+    padding-right: 0rem;
+  }
+}
+.get-consultation__time {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 430px) {
+  .get-consultation__time {
+    flex: 1 1 12.5rem;
+  }
+}
+.get-consultation__icon-time {
+  width: 1rem;
+  margin-right: 0.625rem;
+}
+.get-consultation__time-value {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 129%;
+  color: #7e7c89;
+}
+.get-consultation__form {
+  margin: 1.875rem 0;
+}
+@media screen and (max-width: 524px) {
+  .get-consultation__form {
+    margin: 1.25rem 0 1.875rem 0;
+  }
+}
+@media screen and (max-width: 562px) {
+  .get-consultation__button {
+    width: 100%;
+  }
+}
+
+.form-consultation {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 1.8125rem;
+  row-gap: 1.875rem;
+}
+@media screen and (max-width: 430px) {
+  .form-consultation {
+    column-gap: 0rem;
+    row-gap: 0.9375rem;
+  }
+}
+.form-consultation__first-name {
+  flex: 1 1 47%;
+}
+@media screen and (max-width: 430px) {
+  .form-consultation__first-name {
+    flex: 1 1 9.375rem;
+  }
+}
+.form-consultation__last-name {
+  flex: 1 1 47%;
+}
+@media screen and (max-width: 430px) {
+  .form-consultation__last-name {
+    flex: 1 1 9.375rem;
+  }
+}
+.form-consultation__company-name {
+  flex: 1 1 47%;
+}
+@media screen and (max-width: 430px) {
+  .form-consultation__company-name {
+    flex: 1 1 9.375rem;
+  }
+}
+.form-consultation__monthly {
+  flex: 1 1 47%;
+}
+@media screen and (max-width: 430px) {
+  .form-consultation__monthly {
+    flex: 1 1 9.375rem;
+  }
+}
+.form-consultation__email {
+  flex: 1 1 100%;
+}
+@media screen and (max-width: 430px) {
+  .form-consultation__email {
+    flex: 1 1 9.375rem;
+  }
+}
+
+.input-consultation {
+  padding: 0.625rem 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 188%;
+  color: #555557;
+  border-radius: 8px;
+  background: #f7f7fa;
+}
+@media screen and (max-width: 430px) {
+  .input-consultation {
+    font-size: 0.875rem;
+    padding: 0.625rem 0.625rem;
+  }
 }

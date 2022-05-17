@@ -59,6 +59,18 @@
       margin-top: rem(40);
     }
   }
+  &__consultation {
+    margin: rem(160) auto 0 auto;
+    @media screen and (max-width: 1024px) {
+      margin-top: rem(120);
+    }
+    @media screen and (max-width: 769px) {
+      margin-top: rem(80);
+    }
+    @media screen and (max-width: 481px) {
+      margin-top: rem(40);
+    }
+  }
 }
 
 .main-block {
@@ -1279,5 +1291,273 @@
     font-weight: 400;
     font-size: rem(16);
     line-height: 175%;
+  }
+}
+
+.consultation {
+  max-width: 1880px;
+  padding: 0 20px;
+  &__inner {
+    background-color: $color-green;
+    border-radius: 20px;
+    padding: rem(60) 0;
+    background-image: url('../../img/consultation-block/patterns-background.svg');
+
+    @media screen and (max-width: 1332px) {
+      padding: rem(30) 0;
+    }
+  }
+
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    column-gap: rem(76);
+
+    @media screen and (max-width: 1388px) {
+      column-gap: rem(36);
+      align-items: flex-start;
+    }
+
+    @media screen and (max-width: 1024px) {
+      flex-flow: row wrap;
+    }
+  }
+
+  &__content {
+    flex: 0 0 rem(583);
+    @media screen and (max-width: 1388px) {
+      flex: 0 1 rem(583);
+    }
+    @media screen and (max-width: 1024px) {
+      flex: 1 1 100%;
+      order: 2;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+  }
+
+  &__get {
+    background: #ffffff;
+    flex: 0 0 rem(857);
+    @media screen and (max-width: 1658px) {
+      flex: 0 1 rem(857);
+    }
+    @media screen and (max-width: 1024px) {
+      flex: 1 1 100%;
+      order: 1;
+      margin-bottom: rem(20);
+    }
+  }
+}
+
+.content-consultation {
+  &__quote {
+    max-width: rem(46);
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: rem(22);
+    line-height: 155%;
+    color: $color-white;
+    margin-top: rem(25);
+    max-width: rem(583);
+
+    @media screen and (max-width: 1206px) {
+      font-size: rem(18);
+    }
+    @media screen and (max-width: 524px) {
+      font-size: rem(16);
+      text-align: center;
+      margin-top: rem(17);
+    }
+  }
+
+  &__about-person {
+    margin-top: rem(42);
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 524px) {
+      margin-top: rem(20);
+    }
+  }
+
+  &__person-icon {
+    max-width: rem(60);
+    max-height: rem(60);
+    border-radius: 50%;
+    margin-right: rem(20);
+    @media screen and (max-width: 524px) {
+      max-width: rem(40);
+      max-height: rem(40);
+      margin-right: rem(10);
+    }
+  }
+
+  &__person-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(4);
+    margin-right: rem(30);
+    @media screen and (max-width: 524px) {
+      margin-right: rem(10);
+    }
+  }
+
+  &__person-name {
+    font-weight: 700;
+    font-size: rem(16);
+    line-height: 138%;
+    color: $color-white;
+  }
+
+  &__person-work {
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 129%;
+    color: $color-white;
+  }
+
+  &__signature {
+    max-width: rem(130);
+    & img {
+      width: 100%;
+    }
+    @media screen and (max-width: 524px) {
+      max-width: rem(100);
+    }
+  }
+}
+.get-consultation {
+  padding: rem(54) rem(76) rem(76) rem(76);
+  border-radius: 20px;
+
+  @media screen and (max-width: 1164px) {
+    padding: rem(24) rem(46) rem(46) rem(46);
+  }
+
+  @media screen and (max-width: 524px) {
+    padding: rem(14) rem(26) rem(26) rem(26);
+  }
+  @media screen and (max-width: 430px) {
+    padding: rem(25) rem(15) rem(25) rem(15);
+  }
+  &__consultation-info {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 430px) {
+      flex-flow: row wrap;
+      row-gap: rem(10);
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(22);
+    line-height: 136%;
+    padding-right: rem(10);
+    @media screen and (max-width: 524px) {
+      font-size: rem(20);
+    }
+    @media screen and (max-width: 430px) {
+      flex: 1 1 rem(200);
+      padding-right: rem(0);
+    }
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 430px) {
+      flex: 1 1 rem(200);
+    }
+  }
+
+  &__icon-time {
+    width: rem(16);
+    margin-right: rem(10);
+  }
+
+  &__time-value {
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 129%;
+    color: $color-grey;
+  }
+
+  &__form {
+    margin: rem(30) 0;
+    @media screen and (max-width: 524px) {
+      margin: rem(20) 0 rem(30) 0;
+    }
+  }
+  &__button {
+    @media screen and (max-width: 562px) {
+      width: 100%;
+    }
+  }
+}
+.form-consultation {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: rem(29);
+  row-gap: rem(30);
+
+  @media screen and (max-width: 430px) {
+    column-gap: rem(0);
+    row-gap: rem(15);
+  }
+  &__first-name {
+    flex: 1 1 47%;
+    @media screen and (max-width: 430px) {
+      flex: 1 1 rem(150);
+    }
+  }
+
+  &__last-name {
+    flex: 1 1 47%;
+    @media screen and (max-width: 430px) {
+      flex: 1 1 rem(150);
+    }
+  }
+
+  &__company-name {
+    flex: 1 1 47%;
+    @media screen and (max-width: 430px) {
+      flex: 1 1 rem(150);
+    }
+  }
+
+  &__monthly {
+    flex: 1 1 47%;
+    @media screen and (max-width: 430px) {
+      flex: 1 1 rem(150);
+    }
+  }
+
+  &__email {
+    flex: 1 1 100%;
+    @media screen and (max-width: 430px) {
+      flex: 1 1 rem(150);
+    }
+  }
+}
+.input-consultation {
+  padding: rem(10) rem(20);
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: 188%;
+  color: #555557;
+  border-radius: 8px;
+  background: #f7f7fa;
+  @media screen and (max-width: 430px) {
+    font-size: rem(14);
+    padding: rem(10) rem(10);
   }
 }
